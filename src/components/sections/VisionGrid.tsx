@@ -22,7 +22,7 @@ const iconMap: Record<string, any> = {
 
 export function VisionGrid({ items }: VisionGridProps) {
   return (
-    <section id="vision" className="py-24 bg-slate-900 text-white overflow-hidden">
+    <section id="vision" className="py-24 bg-[#015830] text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="absolute top-0 right-0 w-64 h-64 bg-blue-800/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         

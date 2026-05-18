@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-github-username/your-repo-name # Replace with your actual GitHub username and repository name
+  repo: Kwabenabassaw/Ing.-Carmen-Gabriel-Avle-
   branch: main
   # base_url: https://your-oauth-server-url.com # You will need to set this to your custom OAuth handler for Vercel
 

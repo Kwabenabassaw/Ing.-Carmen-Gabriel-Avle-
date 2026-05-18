@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: Kwabenabassaw/Ing.-Carmen-Gabriel-Avle-
+  name: git-gateway
   branch: main
   # base_url: https://your-oauth-server-url.com # You will need to set this to your custom OAuth handler for Vercel
 

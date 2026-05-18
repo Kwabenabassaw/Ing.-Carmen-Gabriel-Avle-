@@ -1,0 +1,50 @@
+backend:
+  name: github
+  repo: your-github-username/your-repo-name # Replace with your actual GitHub username and repository name
+  branch: main
+  # base_url: https://your-oauth-server-url.com # You will need to set this to your custom OAuth handler for Vercel
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "src/data/profile.json"
+        label: "Profile Data"
+        name: "profile_data"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Titles", name: "titles", widget: "list", field: {label: "Title", name: "title", widget: "string"}}
+              - {label: "Hero Image URL", name: "image", widget: "image"}
+          - label: "Brief Profile"
+            name: "profile"
+            widget: "list"
+            fields:
+              - {label: "Content", name: "text", widget: "string"}
+              - {label: "Category", name: "category", widget: "string"}
+          - label: "Vision for BHOBU"
+            name: "vision"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Icon (Lucide)", name: "icon", widget: "string"}
+          - label: "Achievements Timeline"
+            name: "achievements"
+            widget: "list"
+            fields:
+              - {label: "Period", name: "period", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Details", name: "details", widget: "text"}
+          - label: "Contact Info"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Phone", name: "phone", widget: "string"}

@@ -1,0 +1,127 @@
+{
+  "hero": {
+    "name": "Ing. Carmen Gabriel Avle",
+    "titles": [
+      "Chemical Engineer",
+      "Multidisciplinary Leader",
+      "BHOBU Visionary"
+    ],
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"
+  },
+  "profile": [
+    {
+      "id": 1,
+      "text": "Chemical Engineer with 30+ years of multidisciplinary leadership across Energy, Banking, FMCG, and Agriculture.",
+      "category": "Expertise"
+    },
+    {
+      "id": 2,
+      "text": "COO/Head at DMC Ltd (Agribusiness, Aquaculture, Market Penetration).",
+      "category": "Leadership"
+    },
+    {
+      "id": 3,
+      "text": "Senior Manager (Energy) at GCB Bank (Managed portfolios generating $6.3M annual profit).",
+      "category": "Banking & Finance"
+    },
+    {
+      "id": 4,
+      "text": "Sales & Production, Bighams UK (Food sector operations).",
+      "category": "FMCG"
+    },
+    {
+      "id": 5,
+      "text": "Regional Marketing Manager, British American Tobacco.",
+      "category": "Marketing"
+    },
+    {
+      "id": 6,
+      "text": "Customer Business Development, Procter & Gamble.",
+      "category": "Sales"
+    },
+    {
+      "id": 7,
+      "text": "BSc Chemical Engineering (KNUST).",
+      "category": "Education"
+    },
+    {
+      "id": 8,
+      "text": "Certified Energy Risk Professional (GARP, NY).",
+      "category": "Certification"
+    }
+  ],
+  "vision": [
+    {
+      "id": 1,
+      "title": "Constitutional Modernization",
+      "description": "Finalize the 2026 Constitutional Revision to clarify membership categories and ensure financial compliance for all year groups.",
+      "icon": "Gavel"
+    },
+    {
+      "id": 2,
+      "title": "Talent & Pipeline Development",
+      "description": "Establish a structured leadership pipeline to identify and mentor capable BHOBUs, equipping them to excel in National Level roles.",
+      "icon": "TrendingUp"
+    },
+    {
+      "id": 3,
+      "title": "Infrastructure & Legacy",
+      "description": "Oversee the completion of the new school roads, lavatory, bathhouse and dining hall facilities as key physical landmarks.",
+      "icon": "House"
+    },
+    {
+      "id": 4,
+      "title": "Institutional Governance",
+      "description": "Apply corporate governance standards to Union administration to enhance transparency and stakeholder trust.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "id": 5,
+      "title": "75th Anniversary (2027)",
+      "description": "Serve on the Central Planning Committee in a global mobilization effort to ensure the Diamond Jubilee serves as a major developmental catalyst.",
+      "icon": "Gem"
+    }
+  ],
+  "achievements": [
+    {
+      "id": 1,
+      "period": "Current",
+      "title": "Member, Board of Governors for the school.",
+      "details": "Providing high-level oversight and strategic guidance."
+    },
+    {
+      "id": 2,
+      "period": "Current",
+      "title": "Senior Member, Interim National Executive Committee (INEC).",
+      "details": "Driving the transitional leadership of the Union."
+    },
+    {
+      "id": 3,
+      "period": "2024-2026",
+      "title": "Lead, 2026 Constitutional Revision",
+      "details": "Modernizing the legal framework of the Union."
+    },
+    {
+      "id": 4,
+      "period": "2024-2027",
+      "title": "Member, 75th Anniversary CPC",
+      "details": "Supporting the roadmap for the 2027 celebrations."
+    },
+    {
+      "id": 5,
+      "period": "Long-term",
+      "title": "Mobilized support for critical BIHECO infrastructure",
+      "details": "Classroom block, Dormitory facilities, Dining hall, Bathhouse, Lavatory projects, Biogas facilities, and School Bus acquisition."
+    },
+    {
+      "id": 6,
+      "period": "35+ Years",
+      "title": "Secretary, 1986/88 Year Group",
+      "details": "Providing consistent mobilization and coordination for over 3 decades."
+    }
+  ],
+  "contact": {
+    "email": "carmen.avle@example.com",
+    "phone": "+233 XX XXX XXXX"
+  }
+}

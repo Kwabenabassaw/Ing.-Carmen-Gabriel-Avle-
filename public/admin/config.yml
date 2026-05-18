@@ -1,49 +1,68 @@
 backend:
   name: git-gateway
   branch: main
-  # base_url: https://your-oauth-server-url.com # You will need to set this to your custom OAuth handler for Vercel
 
 media_folder: public/images
 public_folder: /images
 
+# UX Improvements for the CMS layout
+site_url: https://kaleidoscopic-tanuki-021df8.netlify.app
+display_url: https://kaleidoscopic-tanuki-021df8.netlify.app
+
 collections:
   - name: "settings"
-    label: "Site Settings"
+    label: "Website Content Manager"
+    description: "Manage all the text, images, and content displayed on your Leadership Dashboard."
     files:
       - file: "src/data/profile.json"
-        label: "Profile Data"
+        label: "📝 Edit Main Profile & Content"
         name: "profile_data"
+        description: "Update your personal details, vision, achievements, and contact information here. Changes will automatically update the website after you click Save."
         fields:
-          - label: "Hero Section"
+          - label: "1️⃣ Hero Section (Top of the Website)"
             name: "hero"
             widget: "object"
+            hint: "This is the very first thing visitors see when they open the website."
+            collapsed: false
             fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Titles", name: "titles", widget: "list", field: {label: "Title", name: "title", widget: "string"}}
-              - {label: "Hero Image URL", name: "image", widget: "image"}
-          - label: "Brief Profile"
+              - {label: "Your Full Name", name: "name", widget: "string", hint: "Example: Ing. Carmen Gabriel Avle"}
+              - {label: "Your Titles / Roles", name: "titles", widget: "list", hint: "Add your professional titles (e.g., 'BHOBU President', 'Senior Engineer').", field: {label: "Title", name: "title", widget: "string"}}
+              - {label: "Hero Image / Portrait", name: "image", widget: "image", hint: "Upload a high-quality professional portrait. This will be displayed prominently next to your name."}
+              
+          - label: "2️⃣ Brief Profile (About Me)"
             name: "profile"
             widget: "list"
+            hint: "Write short paragraphs about your background, career, and personal life. These appear in the 'About' section."
+            collapsed: true
             fields:
-              - {label: "Content", name: "text", widget: "string"}
-              - {label: "Category", name: "category", widget: "string"}
-          - label: "Vision for BHOBU"
+              - {label: "Section Title / Category", name: "category", widget: "string", hint: "e.g., 'Professional Background', 'Education', 'Leadership Experience'"}
+              - {label: "Paragraph Content", name: "text", widget: "text", hint: "Write the detailed text for this section here."}
+
+          - label: "3️⃣ Vision for BHOBU (Key Pillars)"
             name: "vision"
             widget: "list"
+            hint: "List the core pillars of your vision or campaign promises. Each item will be displayed as a distinct card."
+            collapsed: true
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Description", name: "description", widget: "text"}
-              - {label: "Icon (Lucide)", name: "icon", widget: "string"}
-          - label: "Achievements Timeline"
+              - {label: "Vision Pillar Title", name: "title", widget: "string", hint: "e.g., 'Infrastructure Development' or 'Youth Mentorship'"}
+              - {label: "Detailed Description", name: "description", widget: "text", hint: "Explain what you intend to achieve regarding this pillar."}
+              - {label: "Icon Name (from Lucide)", name: "icon", widget: "string", hint: "Type the exact name of an icon from lucide.dev/icons (e.g., 'Briefcase', 'TrendingUp', 'Users', 'Lightbulb')."}
+
+          - label: "4️⃣ Achievements Timeline"
             name: "achievements"
             widget: "list"
+            hint: "Highlight your past successes and milestones chronologically. These will be plotted on a timeline."
+            collapsed: true
             fields:
-              - {label: "Period", name: "period", widget: "string"}
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Details", name: "details", widget: "text"}
-          - label: "Contact Info"
+              - {label: "Time Period / Year", name: "period", widget: "string", hint: "e.g., '2020 - 2023' or 'August 2024'"}
+              - {label: "Achievement Title", name: "title", widget: "string", hint: "A short, catchy title for what you achieved."}
+              - {label: "Full Details", name: "details", widget: "text", hint: "Explain the achievement and its impact in more detail."}
+
+          - label: "5️⃣ Contact Information"
             name: "contact"
             widget: "object"
+            hint: "How people can reach out to you. This is displayed at the very bottom of the website."
+            collapsed: false
             fields:
-              - {label: "Email", name: "email", widget: "string"}
-              - {label: "Phone", name: "phone", widget: "string"}
+              - {label: "Public Email Address", name: "email", widget: "string", hint: "e.g., contact@example.com"}
+              - {label: "Public Phone Number", name: "phone", widget: "string", hint: "e.g., +233 55 123 4567"}

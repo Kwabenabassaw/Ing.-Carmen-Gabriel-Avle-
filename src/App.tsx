@@ -38,7 +38,7 @@ export default function App() {
         />
       </main>
 
-      <footer className="py-12 bg-slate-900 text-white border-t border-white/10">
+      <footer className="py-12 bg-[#015830] text-white border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
             <div>

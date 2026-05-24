@@ -58,7 +58,14 @@ collections:
               - {label: "Achievement Title", name: "title", widget: "string", hint: "A short, catchy title for what you achieved."}
               - {label: "Full Details", name: "details", widget: "text", hint: "Explain the achievement and its impact in more detail."}
 
-          - label: "5️⃣ Contact Information"
+          - label: "5️⃣ Gallery"
+            name: "gallery"
+            widget: "list"
+            hint: "Add or remove images from your gallery."
+            collapsed: true
+            field: {label: "Image", name: "image", widget: "image"}
+
+          - label: "6️⃣ Contact Information"
             name: "contact"
             widget: "object"
             hint: "How people can reach out to you. This is displayed at the very bottom of the website."

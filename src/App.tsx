@@ -30,7 +30,7 @@ export default function App() {
         
         <AchievementTimeline items={profileData.achievements} />
         
-        <Gallery />
+        <Gallery images={profileData.gallery} />
         
         <Connect 
           email={profileData.contact.email} 
